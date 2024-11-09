@@ -6,11 +6,11 @@ const { Client } = require("@notionhq/client");
 
 require("dotenv").config();
 
-if (!(process.env.NOTION_API_KEY && process.env.DATABASE_ID)) {
+if (!(process.envntn_56581071651aW8TqHHf7QAFeLBpWQOKlowNcjywYxkAcwx. && process.env.139d2c7ea323806aa997e24761d154d8)) {
     throw new Error("Please fill in your API key and database ID in repl.it");
 }
 
-const notion = new Client({ auth: process.env.NOTION_API_KEY });
+const notion = new Client({ auth: process.env.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 });
 const fetch = require("cross-fetch");
 
 let dont_update = [];
@@ -20,10 +20,10 @@ const fetchAndUpdate = async () => {
     console.log("Current don't-update list is", dont_update)
     console.log("Restart server to clear.")
   
-    const databaseId = process.env.DATABASE_ID;
+    const databaseId = process.env.139d2c7ea323806aa997e24761d154d8;
 
     const queryResponse = await notion.databases.query({
-        database_id: databaseId,
+        139d2c7ea323806aa997e24761d154d8: databaseId,
         page_size: 100,
         filter: {
           or: [
